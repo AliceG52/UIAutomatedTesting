@@ -1,7 +1,6 @@
-Feature: Feature name
+Feature: Google
 
-    Feature Description
-
-Scenario: Scenario name
-When Start to type your When step here
-Then Start to type your Then step here
+Scenario: Simple Google Test
+    Given I navigate to Google
+    When I search for 'dogs'
+    Then I expect to see the top 3 of results contain the word 'dog'
